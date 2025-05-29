@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>To-Do App</title>
+</head>
+<body>
+  <nav>
+    <a href="#" onclick="showPage('home')">Home</a>
+    <a href="#" onclick="showPage('add')">Add Task</a>
+    <a href="#" onclick="showPage('about')">About</a>
+  </nav>
+
+  <div id="home" class="page active">
+    <h1>Welcome</h1>
+    <p style="text-align: left;">Welcome to The To Do List App !<br>
+Stay organized, stay productive. <br>
+Your personal task manager is here to help you plan your day, set goals, and never miss a thing. <br>
+Let’s get things done—one task at a time!</p>
+  </div>
+
+  <div id="add" class="page">
+    <h1>To-Do List 📝</h1>
+    <input type="text" id="taskInput" placeholder="Add a new task" />
+    <button onclick="addTask()">Add Yours ➕</button>
+    <ul id="taskList"></ul>
+  </div>
+
+  <div id="about" class="page">
+    <h1>About</h1>
+    <p style="text-align: center;">This website is created by com.hhp. <br> Do you want to know more <a href="#" style="color: black;">click here !</a></p>
+  </div>
+ <button class="theme-toggle" id="themeToggleBtn" aria-label="Toggle Theme" onclick="toggleTheme()">
+  <b>🌙</b>
+</button>
+
+</body>
+<script src="script.js"></script>
+</html>
